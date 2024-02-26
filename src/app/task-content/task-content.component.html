@@ -1,0 +1,18 @@
+<div class="parent-container">
+<div class="card" style="width: 18rem; margin-left: 1.5%;" >
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor = "let task of task_l">
+          <div>
+          <input class="form-check-input me-1" type="checkbox" value="" id="{{task.id}}" 
+          (change)="checkChecked()" [(ngModel)]="task.visible">
+          <label class="form-check-label" for="{{task.id}}">{{task.content}}</label>
+          <button type="button" class="btn" id ="{{task.id}}" (click) = "deleteElement(task.id)">X</button>
+          </div>
+          
+        </li>
+      </ul>
+</div>
+</div>
+ 
+
+

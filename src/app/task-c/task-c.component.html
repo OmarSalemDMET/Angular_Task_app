@@ -1,0 +1,28 @@
+<div class="parent-container">
+<div style="padding-left: 15px;  position: relative;">
+ <form id = "myForm" *ngIf = "getWantNew()" style="position: relative;">
+      <input id = "newTask" placeholder="Write a Task">
+      <br>
+      <br>
+      <button class="btn btn-primary" type="submit" (click) = "changeWantNew()" >Cancel Task</button>
+      <br>
+      <br>
+      <button class="btn btn-primary" type="submit" (click)="onSelect(); changeWantNew();"> submit </button>  
+ </form>
+</div>
+
+    <br><br>
+
+   <div>
+    <button class="btn btn-primary" type="submit" (click) = "changeWantNew()" *ngIf = "!getWantNew()">New Task</button>
+   </div>  
+    <br> 
+    <br>
+
+ 
+
+    <br><br>
+</div>
+<app-task-content></app-task-content>
+
+

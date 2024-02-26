@@ -1,0 +1,7 @@
+.parent-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 45vh; /* Optional: Set a height for the parent container to center vertically */
+  }
